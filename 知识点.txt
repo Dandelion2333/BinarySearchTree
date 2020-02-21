@@ -36,3 +36,6 @@ python语法：
     4、递归的使用注意项：
         1、当有返回值时，注意返回值返回的位置。具体参考search.py模块，SearchData递归之后的返回值，只是返回到result
             result = SearchData(value, left, BinaryTree)
+
+二叉搜索树项目的结构：
+    1、由四个文件组成，分别是插入、搜索，删除、可视化打印二叉树

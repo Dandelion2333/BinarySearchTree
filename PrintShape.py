@@ -27,20 +27,21 @@ def judgePosition(length):
 
 
 def BinaryTreePrinter(listOne=None):
+    listTwo = listOne.copy()
 
-    listOne = Adjust(listOne)
-    # print(listOne)
+    listTwo = Adjust(listTwo)
+    # print(listTwo)
 
     """
     打印列表为二叉树形状
-    :param listOne: 传入的列表
+    :param listTwo: 传入的列表
     :return:
     """
-    rows = judgePosition(len(listOne))[0]  # rows为总行数
+    rows = judgePosition(len(listTwo))[0]  # rows为总行数
     count = 0
     pre_row, pre_col = 0, 0  # 记录上一个数的行与列
 
-    for x in listOne:
+    for x in listTwo:
         count += 1  # 计数现在打印的是第几个数
         x_row, x_col = judgePosition(count)  # 计算出当前打印的数位于第几行，第几列
         if x_row != pre_row:  # 如果换行了，那么打印换行符
